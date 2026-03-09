@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NVC Wildcats | Animation & Cartoons</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/willie-chat.css" />
 </head>
 <body>
   <header class="site-header">
@@ -33,31 +34,80 @@
 
     <section class="animation-grid" aria-label="Animation projects">
       <article class="animation-card">
-        <h2>Featured AI Animation</h2>
-        <p>Short film generated and edited by students using AI-assisted tools.</p>
+        <h2>Cinematic Welcome</h2>
+        <p>Opening showcase for the Wildcats AI and Cloud Animation Vault.</p>
         <video controls preload="metadata" class="media-frame">
-          <source src="assets/media/animation.mp4" type="video/mp4" />
+          <source src="assets/media/welcome-to-nvc.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </article>
 
       <article class="animation-card">
-        <h2>GIF Showcase</h2>
-        <p>Looping motion clips and character tests from student creators.</p>
-        <img class="media-frame" src="assets/media/ai-loop.gif" alt="AI-generated animation loop by club members" />
+        <h2>Wildcat Cloud Crew</h2>
+        <p>Character-focused clip featuring student cloud creators in action.</p>
+        <video controls preload="metadata" class="media-frame">
+          <source src="assets/media/the-cloud-crew.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </article>
 
       <article class="animation-card">
-        <h2>Project Highlights</h2>
-        <ul class="animation-list">
-          <li>AI storyboard to final animation workflow</li>
-          <li>Student voiceover and post-production editing</li>
-          <li>Motion graphics for campus events and tech talks</li>
-          <li>Cartoon short clips rendered for social channels</li>
-        </ul>
-        <a class="btn" href="feedback.html">Submit Your Animation</a>
+        <h2>Digital Frontier</h2>
+        <p>AI-generated short on innovation and digital transformation.</p>
+        <video controls preload="metadata" class="media-frame">
+          <source src="assets/media/digital-frontier.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article class="animation-card">
+        <h2>Computing Power</h2>
+        <p>Visualization of cloud scale, compute acceleration, and performance.</p>
+        <video controls preload="metadata" class="media-frame">
+          <source src="assets/media/computing-power.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article class="animation-card">
+        <h2>AI Innovation</h2>
+        <p>Creative showcase of AI concepts designed by club members.</p>
+        <video controls preload="metadata" class="media-frame">
+          <source src="assets/media/ai-innovation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article class="animation-card">
+        <h2>Digital Defense</h2>
+        <p>Cybersecurity-inspired sequence focused on defense and resilience.</p>
+        <video controls preload="metadata" class="media-frame">
+          <source src="assets/media/digital-defense.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </article>
     </section>
   </main>
+<!-- Cloud Club Willie Chat Widget -->
+<div id="willie-launcher">
+  <img src="https://nvcwildcats-willie-chat-bubble.s3.us-east-1.amazonaws.com/NVC-Bublble.png" alt="Willie">
+</div>
+
+<div id="willie-chat-widget">
+  <div class="widget-header">
+    <img src="https://nvcwildcats-willie-chat-bubble.s3.us-east-1.amazonaws.com/NVC-Bublble.png" class="header-willie" alt="Willie">
+    <span>Cloud Club Willie</span>
+    <button id="close-widget">x</button>
+  </div>
+
+  <div class="widget-messages" id="widget-messages"></div>
+
+  <div class="widget-input">
+    <input type="text" id="widget-text" placeholder="Ask Willie anything...">
+    <button id="widget-send">➤</button>
+  </div>
+</div>
+
+<script src="js/willie-chat.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NVC Wildcats | Guest Speakers</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/willie-chat.css" />
 </head>
 <body>
     <header class="site-header">
@@ -27,5 +28,26 @@
   <main class="container">
     <h1>Guest Speakers</h1>
   </main>
+<!-- Cloud Club Willie Chat Widget -->
+<div id="willie-launcher">
+  <img src="https://nvcwildcats-willie-chat-bubble.s3.us-east-1.amazonaws.com/NVC-Bublble.png" alt="Willie">
+</div>
+
+<div id="willie-chat-widget">
+  <div class="widget-header">
+    <img src="https://nvcwildcats-willie-chat-bubble.s3.us-east-1.amazonaws.com/NVC-Bublble.png" class="header-willie" alt="Willie">
+    <span>Cloud Club Willie</span>
+    <button id="close-widget">x</button>
+  </div>
+
+  <div class="widget-messages" id="widget-messages"></div>
+
+  <div class="widget-input">
+    <input type="text" id="widget-text" placeholder="Ask Willie anything...">
+    <button id="widget-send">➤</button>
+  </div>
+</div>
+
+<script src="js/willie-chat.js"></script>
 </body>
 </html>
